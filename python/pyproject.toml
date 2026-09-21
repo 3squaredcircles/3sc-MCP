@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "3sc-mcp"
+version = "1.0.0"
+description = "MCP Server for the 3SC Automated Governance Platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0"
+]
+
+[project.scripts]
+# This creates the command line shortcut
+3sc-mcp = "server:main"
