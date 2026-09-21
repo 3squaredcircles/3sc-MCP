@@ -76,17 +76,21 @@ Restart Claude Desktop, and you will see the 🛠️ icon indicating the 3SC too
 
 #### Example Prompts
 Once connected, try asking your AI assistant these questions:
+
 **Architecture & Tech Debt**
 - "I'm about to refactor the OrderService. Use Vestigo to tell me the blast radius of this module."
 - "Did Protega catch any architecture violations in the latest build? If so, what file caused them?"
 - "Use Scrutari to find the cyclomatic complexity of the UsersController."
+  
 **Data & Risk**
 - "Look at the proposed Voda SQL migration. Is it flagged as risky? Does it drop any tables?"
 - "Are there any active Vatra governance violations on our production database right now?"
+  
 **FinOps & Release**
 - "Draft a short executive summary of our cloud waste using Atlas."
 - "Why did Insipio bump our version to 2.0.0? Show me the breaking code changes."
 - "Why is the deployment pipeline paused? Check Custos."
+  
 ## How it Works (Under the Hood)
 The server acts as a bridge. It does not send your source code to an LLM. Instead, it exposes localized Tools (functions) and Resources (read-only files) that the LLM can invoke.
 
